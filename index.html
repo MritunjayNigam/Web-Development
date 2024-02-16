@@ -1,12 +1,59 @@
 <html>
- <head>
-  <title>My Page</title>
-  <body bgcolor="lavender">
-   <center>
-    <h1>My Demo Page</h1>
-    <br>
-    <p>This is my demo HTML Page</p>
-   </center>
-  </body>
- </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 8</title>
+    <style>
+     .main{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(25,1fr);
+    grid-gap: 12px;
+    height: 100%;
+}
+.box{
+    border: 1px solid yellow;
+    background-color: yellow;
+    padding: 4%;
+    font-weight: 800;
+    font-size: larger;
+    font-family: cursive;
+}
+.box1{
+    grid-row-start: 1;
+    grid-row-end: 26;
+}
+.box2{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.box5{
+    grid-row-end: 26;
+    grid-row-start: 22;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+.box4{
+    grid-column-start: 5;
+    grid-row-end: 22;
+    grid-row-start: 5;
+}
+.box3{
+    grid-column-start:2;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 22;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box box1">Nav</div>
+        <div class="box box2">Header</div>
+        <div class="box box3">Article</div>
+        <div class="box box4">Ads</div>
+        <div class="box box5">Footer</div>
+    </div>
+</body>
 </html>
